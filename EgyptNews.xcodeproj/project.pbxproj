@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0144D527260AB90021D6D4 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0144D427260AB90021D6D4 /* ApiError.swift */; };
 		EA0B2A882725AA32003E4420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2A872725AA32003E4420 /* AppDelegate.swift */; };
 		EA0B2A8A2725AA32003E4420 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2A892725AA32003E4420 /* SceneDelegate.swift */; };
-		EA0B2A8C2725AA32003E4420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2A8B2725AA32003E4420 /* ViewController.swift */; };
-		EA0B2A8F2725AA32003E4420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0B2A8D2725AA32003E4420 /* Main.storyboard */; };
 		EA0B2A912725AA33003E4420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0B2A902725AA33003E4420 /* Assets.xcassets */; };
 		EA0B2A942725AA33003E4420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0B2A922725AA33003E4420 /* LaunchScreen.storyboard */; };
 		EA0B2A9F2725AA34003E4420 /* EgyptNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2A9E2725AA34003E4420 /* EgyptNewsTests.swift */; };
 		EA0B2AA92725AA34003E4420 /* EgyptNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2AA82725AA34003E4420 /* EgyptNewsUITests.swift */; };
 		EA0B2AAB2725AA34003E4420 /* EgyptNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2AAA2725AA34003E4420 /* EgyptNewsUITestsLaunchTests.swift */; };
+		EA0B2AC32725AEAE003E4420 /* libMvvmWhite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0B2ABB2725ADCE003E4420 /* libMvvmWhite.a */; };
+		EA0B2AC8272609C5003E4420 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2AC7272609C5003E4420 /* ApiService.swift */; };
+		EAB6EB552726DBD3009A1F8F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB542726DBD3009A1F8F /* StringExtension.swift */; };
+		EAB6EB5827270662009A1F8F /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB5727270662009A1F8F /* Urls.swift */; };
+		EAB6EB5B272708E4009A1F8F /* NewsRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB5A272708E4009A1F8F /* NewsRepo.swift */; };
+		EAB6EB5E2727091F009A1F8F /* HeadlinesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB5D2727091F009A1F8F /* HeadlinesData.swift */; };
+		EAB6EB6027270BAD009A1F8F /* ApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB5F27270BAD009A1F8F /* ApiProtocol.swift */; };
+		EAB6EB6227270CB2009A1F8F /* DataState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB6127270CB2009A1F8F /* DataState.swift */; };
+		EAB6EB6527271709009A1F8F /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB6427271709009A1F8F /* NewsService.swift */; };
+		EAB6EB672727175F009A1F8F /* NewsRepoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB662727175F009A1F8F /* NewsRepoProtocol.swift */; };
+		EAB6EB6A27271A2E009A1F8F /* HeadlineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB6927271A2E009A1F8F /* HeadlineModel.swift */; };
+		EAB6EB6C27271D83009A1F8F /* NewsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB6B27271D83009A1F8F /* NewsServiceProtocol.swift */; };
+		EAB6EB7127271F4E009A1F8F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB7027271F4E009A1F8F /* HomeViewController.swift */; };
+		EAB6EB7327271F79009A1F8F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB6EB7227271F79009A1F8F /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,14 +46,32 @@
 			remoteGlobalIDString = EA0B2A832725AA32003E4420;
 			remoteInfo = EgyptNews;
 		};
+		EA0B2AC42725AEAE003E4420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA0B2A7C2725AA31003E4420 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA0B2ABA2725ADCE003E4420;
+			remoteInfo = MvvmWhite;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EA0B2AB92725ADCE003E4420 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		EA0144D427260AB90021D6D4 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		EA0B2A842725AA32003E4420 /* EgyptNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EgyptNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0B2A872725AA32003E4420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA0B2A892725AA32003E4420 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA0B2A8B2725AA32003E4420 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EA0B2A8E2725AA32003E4420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA0B2A902725AA33003E4420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA0B2A932725AA33003E4420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA0B2A952725AA33003E4420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +80,20 @@
 		EA0B2AA42725AA34003E4420 /* EgyptNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EgyptNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0B2AA82725AA34003E4420 /* EgyptNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgyptNewsUITests.swift; sourceTree = "<group>"; };
 		EA0B2AAA2725AA34003E4420 /* EgyptNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgyptNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA0B2ABB2725ADCE003E4420 /* libMvvmWhite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMvvmWhite.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0B2AC7272609C5003E4420 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		EAB6EB542726DBD3009A1F8F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		EAB6EB5727270662009A1F8F /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		EAB6EB5A272708E4009A1F8F /* NewsRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepo.swift; sourceTree = "<group>"; };
+		EAB6EB5D2727091F009A1F8F /* HeadlinesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesData.swift; sourceTree = "<group>"; };
+		EAB6EB5F27270BAD009A1F8F /* ApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProtocol.swift; sourceTree = "<group>"; };
+		EAB6EB6127270CB2009A1F8F /* DataState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataState.swift; sourceTree = "<group>"; };
+		EAB6EB6427271709009A1F8F /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		EAB6EB662727175F009A1F8F /* NewsRepoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepoProtocol.swift; sourceTree = "<group>"; };
+		EAB6EB6927271A2E009A1F8F /* HeadlineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineModel.swift; sourceTree = "<group>"; };
+		EAB6EB6B27271D83009A1F8F /* NewsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsServiceProtocol.swift; sourceTree = "<group>"; };
+		EAB6EB7027271F4E009A1F8F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EAB6EB7227271F79009A1F8F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0B2AC32725AEAE003E4420 /* libMvvmWhite.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +119,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA0B2AB82725ADCE003E4420 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,7 +135,9 @@
 				EA0B2A862725AA32003E4420 /* EgyptNews */,
 				EA0B2A9D2725AA34003E4420 /* EgyptNewsTests */,
 				EA0B2AA72725AA34003E4420 /* EgyptNewsUITests */,
+				EA0B2ABC2725ADCE003E4420 /* MvvmWhite */,
 				EA0B2A852725AA32003E4420 /* Products */,
+				EA0B2AC22725AEAE003E4420 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +147,7 @@
 				EA0B2A842725AA32003E4420 /* EgyptNews.app */,
 				EA0B2A9A2725AA34003E4420 /* EgyptNewsTests.xctest */,
 				EA0B2AA42725AA34003E4420 /* EgyptNewsUITests.xctest */,
+				EA0B2ABB2725ADCE003E4420 /* libMvvmWhite.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,12 +155,16 @@
 		EA0B2A862725AA32003E4420 /* EgyptNews */ = {
 			isa = PBXGroup;
 			children = (
+				EAB6EB6F27271DE1009A1F8F /* Views */,
+				EAB6EB6D27271DC6009A1F8F /* ViewModels */,
+				EAB6EB6827271A14009A1F8F /* Models */,
+				EAB6EB63272716F3009A1F8F /* Services */,
+				EAB6EB5C27270912009A1F8F /* Data */,
+				EAB6EB59272708D4009A1F8F /* Repos */,
+				EAB6EB5627270652009A1F8F /* Constants */,
 				EA0B2A872725AA32003E4420 /* AppDelegate.swift */,
 				EA0B2A892725AA32003E4420 /* SceneDelegate.swift */,
-				EA0B2A8B2725AA32003E4420 /* ViewController.swift */,
-				EA0B2A8D2725AA32003E4420 /* Main.storyboard */,
 				EA0B2A902725AA33003E4420 /* Assets.xcassets */,
-				EA0B2A922725AA33003E4420 /* LaunchScreen.storyboard */,
 				EA0B2A952725AA33003E4420 /* Info.plist */,
 			);
 			path = EgyptNews;
@@ -127,6 +187,108 @@
 			path = EgyptNewsUITests;
 			sourceTree = "<group>";
 		};
+		EA0B2ABC2725ADCE003E4420 /* MvvmWhite */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6EB532726DA36009A1F8F /* Extensions */,
+				EA0B2AC6272609AA003E4420 /* Services */,
+			);
+			path = MvvmWhite;
+			sourceTree = "<group>";
+		};
+		EA0B2AC22725AEAE003E4420 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA0B2AC6272609AA003E4420 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6EB7427272218009A1F8F /* ApiService */,
+				EAB6EB6127270CB2009A1F8F /* DataState.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EAB6EB532726DA36009A1F8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6EB542726DBD3009A1F8F /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EAB6EB5627270652009A1F8F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6EB5727270662009A1F8F /* Urls.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		EAB6EB59272708D4009A1F8F /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6EB5A272708E4009A1F8F /* NewsRepo.swift */,
+				EAB6EB662727175F009A1F8F /* NewsRepoProtocol.swift */,
+			);
+			path = Repos;
+			sourceTree = "<group>";
+		};
+		EAB6EB5C27270912009A1F8F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6EB5D2727091F009A1F8F /* HeadlinesData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EAB6EB63272716F3009A1F8F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6EB6427271709009A1F8F /* NewsService.swift */,
+				EAB6EB6B27271D83009A1F8F /* NewsServiceProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EAB6EB6827271A14009A1F8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6EB6927271A2E009A1F8F /* HeadlineModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EAB6EB6D27271DC6009A1F8F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EAB6EB6F27271DE1009A1F8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA0B2A922725AA33003E4420 /* LaunchScreen.storyboard */,
+				EAB6EB7027271F4E009A1F8F /* HomeViewController.swift */,
+				EAB6EB7227271F79009A1F8F /* Home.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EAB6EB7427272218009A1F8F /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				EA0B2AC7272609C5003E4420 /* ApiService.swift */,
+				EA0144D427260AB90021D6D4 /* ApiError.swift */,
+				EAB6EB5F27270BAD009A1F8F /* ApiProtocol.swift */,
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +303,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EA0B2AC52725AEAE003E4420 /* PBXTargetDependency */,
 			);
 			name = EgyptNews;
 			productName = EgyptNews;
@@ -183,6 +346,23 @@
 			productReference = EA0B2AA42725AA34003E4420 /* EgyptNewsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		EA0B2ABA2725ADCE003E4420 /* MvvmWhite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA0B2ABF2725ADCE003E4420 /* Build configuration list for PBXNativeTarget "MvvmWhite" */;
+			buildPhases = (
+				EA0B2AB72725ADCE003E4420 /* Sources */,
+				EA0B2AB82725ADCE003E4420 /* Frameworks */,
+				EA0B2AB92725ADCE003E4420 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MvvmWhite;
+			productName = MvvmWhite;
+			productReference = EA0B2ABB2725ADCE003E4420 /* libMvvmWhite.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +384,9 @@
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = EA0B2A832725AA32003E4420;
 					};
+					EA0B2ABA2725ADCE003E4420 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 				};
 			};
 			buildConfigurationList = EA0B2A7F2725AA31003E4420 /* Build configuration list for PBXProject "EgyptNews" */;
@@ -222,6 +405,7 @@
 				EA0B2A832725AA32003E4420 /* EgyptNews */,
 				EA0B2A992725AA34003E4420 /* EgyptNewsTests */,
 				EA0B2AA32725AA34003E4420 /* EgyptNewsUITests */,
+				EA0B2ABA2725ADCE003E4420 /* MvvmWhite */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +417,7 @@
 			files = (
 				EA0B2A942725AA33003E4420 /* LaunchScreen.storyboard in Resources */,
 				EA0B2A912725AA33003E4420 /* Assets.xcassets in Resources */,
-				EA0B2A8F2725AA32003E4420 /* Main.storyboard in Resources */,
+				EAB6EB7327271F79009A1F8F /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +442,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA0B2A8C2725AA32003E4420 /* ViewController.swift in Sources */,
+				EAB6EB6C27271D83009A1F8F /* NewsServiceProtocol.swift in Sources */,
 				EA0B2A882725AA32003E4420 /* AppDelegate.swift in Sources */,
+				EAB6EB5E2727091F009A1F8F /* HeadlinesData.swift in Sources */,
 				EA0B2A8A2725AA32003E4420 /* SceneDelegate.swift in Sources */,
+				EAB6EB5827270662009A1F8F /* Urls.swift in Sources */,
+				EAB6EB6527271709009A1F8F /* NewsService.swift in Sources */,
+				EAB6EB7127271F4E009A1F8F /* HomeViewController.swift in Sources */,
+				EAB6EB672727175F009A1F8F /* NewsRepoProtocol.swift in Sources */,
+				EAB6EB5B272708E4009A1F8F /* NewsRepo.swift in Sources */,
+				EAB6EB6A27271A2E009A1F8F /* HeadlineModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +472,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA0B2AB72725ADCE003E4420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB6EB6027270BAD009A1F8F /* ApiProtocol.swift in Sources */,
+				EAB6EB552726DBD3009A1F8F /* StringExtension.swift in Sources */,
+				EAB6EB6227270CB2009A1F8F /* DataState.swift in Sources */,
+				EA0B2AC8272609C5003E4420 /* ApiService.swift in Sources */,
+				EA0144D527260AB90021D6D4 /* ApiError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -294,17 +497,14 @@
 			target = EA0B2A832725AA32003E4420 /* EgyptNews */;
 			targetProxy = EA0B2AA52725AA34003E4420 /* PBXContainerItemProxy */;
 		};
+		EA0B2AC52725AEAE003E4420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA0B2ABA2725ADCE003E4420 /* MvvmWhite */;
+			targetProxy = EA0B2AC42725AEAE003E4420 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EA0B2A8D2725AA32003E4420 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA0B2A8E2725AA32003E4420 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA0B2A922725AA33003E4420 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,9 +643,10 @@
 				INFOPLIST_FILE = EgyptNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +656,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -470,9 +671,10 @@
 				INFOPLIST_FILE = EgyptNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +684,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -578,6 +780,32 @@
 			};
 			name = Release;
 		};
+		EA0B2AC02725ADCE003E4420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA0B2AC12725ADCE003E4420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -613,6 +841,15 @@
 			buildConfigurations = (
 				EA0B2AB52725AA34003E4420 /* Debug */,
 				EA0B2AB62725AA34003E4420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA0B2ABF2725ADCE003E4420 /* Build configuration list for PBXNativeTarget "MvvmWhite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0B2AC02725ADCE003E4420 /* Debug */,
+				EA0B2AC12725ADCE003E4420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
