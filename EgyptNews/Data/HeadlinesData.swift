@@ -29,6 +29,10 @@ struct Article: Codable {
         case articleDescription = "description"
         case url, urlToImage, publishedAt, content
     }
+    var displayDate: String {
+        //some logic
+        publishedAt.description
+    }
 }
 
 // MARK: - Source

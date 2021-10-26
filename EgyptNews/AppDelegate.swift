@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MvvmWhite
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Settings.defaultImageUrl = "https://via.placeholder.com/40x40.png?text=Image+is+removed"
         return true
     }
 

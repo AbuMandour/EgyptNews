@@ -9,5 +9,5 @@ import Foundation
 import MvvmWhite
 
 protocol NewsServiceProtocol {
-    func getHeadlines() -> Result<HeadlineModel, DataState>
+    func getHeadlines() async -> Result<[HeadlineModel], DataState>
 }

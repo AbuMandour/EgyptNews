@@ -17,6 +17,9 @@
 		EA0B2AAB2725AA34003E4420 /* EgyptNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2AAA2725AA34003E4420 /* EgyptNewsUITestsLaunchTests.swift */; };
 		EA0B2AC32725AEAE003E4420 /* libMvvmWhite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0B2ABB2725ADCE003E4420 /* libMvvmWhite.a */; };
 		EA0B2AC8272609C5003E4420 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2AC7272609C5003E4420 /* ApiService.swift */; };
+		EA9FFE65272829AB00FBBB2C /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FFE64272829AB00FBBB2C /* BaseModel.swift */; };
+		EA9FFE692728453F00FBBB2C /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FFE682728453F00FBBB2C /* BaseService.swift */; };
+		EA9FFE6C2728477A00FBBB2C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FFE6B2728477A00FBBB2C /* Settings.swift */; };
 		EAB6EB552726DBD3009A1F8F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB542726DBD3009A1F8F /* StringExtension.swift */; };
 		EAB6EB5827270662009A1F8F /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB5727270662009A1F8F /* Urls.swift */; };
 		EAB6EB5B272708E4009A1F8F /* NewsRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6EB5A272708E4009A1F8F /* NewsRepo.swift */; };
@@ -82,6 +85,9 @@
 		EA0B2AAA2725AA34003E4420 /* EgyptNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgyptNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EA0B2ABB2725ADCE003E4420 /* libMvvmWhite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMvvmWhite.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0B2AC7272609C5003E4420 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		EA9FFE64272829AB00FBBB2C /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		EA9FFE682728453F00FBBB2C /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		EA9FFE6B2728477A00FBBB2C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		EAB6EB542726DBD3009A1F8F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		EAB6EB5727270662009A1F8F /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		EAB6EB5A272708E4009A1F8F /* NewsRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepo.swift; sourceTree = "<group>"; };
@@ -190,6 +196,9 @@
 		EA0B2ABC2725ADCE003E4420 /* MvvmWhite */ = {
 			isa = PBXGroup;
 			children = (
+				EA9FFE6B2728477A00FBBB2C /* Settings.swift */,
+				EA9FFE632728299500FBBB2C /* Bases */,
+				EA9FFE602728288400FBBB2C /* Protocols */,
 				EAB6EB532726DA36009A1F8F /* Extensions */,
 				EA0B2AC6272609AA003E4420 /* Services */,
 			);
@@ -210,6 +219,22 @@
 				EAB6EB6127270CB2009A1F8F /* DataState.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		EA9FFE602728288400FBBB2C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EA9FFE632728299500FBBB2C /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				EA9FFE64272829AB00FBBB2C /* BaseModel.swift */,
+				EA9FFE682728453F00FBBB2C /* BaseService.swift */,
+			);
+			path = Bases;
 			sourceTree = "<group>";
 		};
 		EAB6EB532726DA36009A1F8F /* Extensions */ = {
@@ -478,7 +503,10 @@
 			files = (
 				EAB6EB6027270BAD009A1F8F /* ApiProtocol.swift in Sources */,
 				EAB6EB552726DBD3009A1F8F /* StringExtension.swift in Sources */,
+				EA9FFE6C2728477A00FBBB2C /* Settings.swift in Sources */,
+				EA9FFE65272829AB00FBBB2C /* BaseModel.swift in Sources */,
 				EAB6EB6227270CB2009A1F8F /* DataState.swift in Sources */,
+				EA9FFE692728453F00FBBB2C /* BaseService.swift in Sources */,
 				EA0B2AC8272609C5003E4420 /* ApiService.swift in Sources */,
 				EA0144D527260AB90021D6D4 /* ApiError.swift in Sources */,
 			);

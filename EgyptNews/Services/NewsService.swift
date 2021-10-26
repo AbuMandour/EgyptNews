@@ -8,14 +8,38 @@
 import Foundation
 import MvvmWhite
 
-class NewsService : NewsServiceProtocol {
+class NewsService :BaseService, NewsServiceProtocol{
+    
     let newsRepo: NewsRepoProtocol
     
     init(newsRepo: NewsRepoProtocol) {
-        self.newsRepo = newsRepo
+        self.newsRepo = newsRepo        
     }
     
-    func getHeadlines() -> Result<HeadlineModel, DataState> {
-        .failure(.Empty("empty"))
+    func getHeadlines() async -> Result<[HeadlineModel], DataState> {
+        let result = await newsRepo.fetchNews() as Result<HeadlinesData,ApiError>
+        switch result{
+        case .success(let data):
+            if data.articles.isEmpty{
+                return .failure(.Empty("No data"))
+            }
+            let models = mapToHeadlineModels(data: data)
+            return .success(models)
+        case .failure(let error):
+            return .failure(.Error(error.description))
+        }
+    }
+    
+    func mapToHeadlineModels (data: HeadlinesData) -> [HeadlineModel]{
+        var models = [HeadlineModel]()
+        for article in data.articles {
+            let model = HeadlineModel(id: UUID().uuidString,
+                                      title: article.title,
+                                      imageUrl: getImageUrl(from: article.urlToImage),
+                                      description: article.articleDescription)
+            models.append(model)
+        }
+        return models
     }
 }
+

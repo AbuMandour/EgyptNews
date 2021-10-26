@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import MvvmWhite
 
-struct HeadlineModel {
+struct HeadlineModel : BaseModel {
+    var id: String            
     var title: String
-    var imageUrl: String
+    var imageUrl: URL
+    var description: String
 }
