@@ -26,23 +26,27 @@ class HomeViewController: UIViewController {
         headlineTableView.register(HeadlineTableViewCell.nib, forCellReuseIdentifier: HeadlineTableViewCell.typeName)
     }
     
-    private func setupViews() {
-        activityIndicator.stopAnimating()
-        faultLabel.isHidden = !homeViewModel.emptyString.isEmptyOrWhiteSpaces || !homeViewModel.errorString.isEmptyOrWhiteSpaces
+    private func setupViews(faultText: String?) {
+        DispatchQueue.main.async { [self] in
+            activityIndicator.stopAnimating()
+            guard let faultText = faultText else {
+                headlineTableView.reloadData()
+                return
+            }            
+            faultLabel.text = faultText
+            faultLabel.isHidden = false
+        }
     }
     
     private func loadData(){
         Task.init(priority: .background) {
             await homeViewModel.getHeadlinesNews()
             if !homeViewModel.emptyString.isEmptyOrWhiteSpaces{
-                faultLabel.text = homeViewModel.emptyString
+                setupViews(faultText: homeViewModel.emptyString)
             } else if !homeViewModel.errorString.isEmptyOrWhiteSpaces{
-                faultLabel.text = homeViewModel.errorString
+                setupViews(faultText: homeViewModel.errorString)
             } else {
-                DispatchQueue.main.async {
-                    self.headlineTableView.reloadData()
-                    self.setupViews()
-                }
+                setupViews(faultText: nil)
             }
         }
     }

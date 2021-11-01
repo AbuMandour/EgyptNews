@@ -18,7 +18,7 @@ class NewsService :BaseService, NewsServiceProtocol{
     
     func getHeadlines() async -> Result<[HeadlineModel], DataState> {
         let result = await newsRepo.fetchNews() as Result<HeadlinesData,ApiError>
-        switch result{
+        switch result {
         case .success(let data):
             if data.articles.isEmpty{
                 return .failure(.Empty("No data"))
@@ -27,7 +27,7 @@ class NewsService :BaseService, NewsServiceProtocol{
             return .success(models)
         case .failure(let error):
             return .failure(.Error(error.description))
-        }
+        }        
     }
     
     func mapToHeadlineModels (data: HeadlinesData) -> [HeadlineModel]{
