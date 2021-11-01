@@ -10,6 +10,10 @@ import Foundation
 
 public class ApiService : ApiProtocol {
     
+    public init() {
+        
+    }
+    
     public func fetchItem<T:Codable>(urlString: String) async -> Result<T,ApiError> {
         guard let url = URL(string: urlString) else {
             return .failure(.InvaildUrl)
@@ -28,8 +32,8 @@ public class ApiService : ApiProtocol {
             do {
                 let result = try JSONDecoder().decode(T.self, from: data)
                 return .success(result)
-            } catch{
-                return .failure(.SerializeError)
+            } catch let error{                                
+                return .failure(.SerializeError(error))
             }
         } catch let error {
             return .failure(.InvaildData(error))
@@ -54,8 +58,8 @@ public class ApiService : ApiProtocol {
             do {
                 let result = try JSONDecoder().decode([T].self, from: data)
                 return .success(result)
-            } catch{
-                return .failure(.SerializeError)
+            } catch let error{
+                return .failure(.SerializeError(error))
             }
         } catch let error {
             return .failure(.InvaildData(error))

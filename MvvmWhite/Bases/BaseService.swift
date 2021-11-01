@@ -18,7 +18,7 @@ open class BaseService{
             return url
         }
         guard let defaultImageUrl = Settings.defaultImageUrl else{
-            fatalError("no default image")
+            return URL(string: "")!
         }
         return URL(string: defaultImageUrl)!
     }

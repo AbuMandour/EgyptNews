@@ -8,7 +8,7 @@
 import Foundation
 import MvvmWhite
 
-class newsRepo : NewsRepoProtocol {
+class NewsRepo : NewsRepoProtocol {
     
     let apiService: ApiProtocol
     

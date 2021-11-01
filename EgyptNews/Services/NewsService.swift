@@ -13,7 +13,7 @@ class NewsService :BaseService, NewsServiceProtocol{
     let newsRepo: NewsRepoProtocol
     
     init(newsRepo: NewsRepoProtocol) {
-        self.newsRepo = newsRepo        
+        self.newsRepo = newsRepo
     }
     
     func getHeadlines() async -> Result<[HeadlineModel], DataState> {

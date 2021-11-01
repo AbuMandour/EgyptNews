@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kVl-JL-yzC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="ajn-Vn-G0H">
+            <objects>
+                <viewController id="kVl-JL-yzC" customClass="HomeViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eFL-7c-PyM" userLabel="rootView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="emptyString" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtc-pM-Riz" userLabel="faultLabel">
+                                <rect key="frame" x="125" y="428" width="164.5" height="40"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Qxc-71-QkH" userLabel="activityIndicator">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </activityIndicatorView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3la-yf-Njd" userLabel="headlineTableView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="57W-Ux-65s"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qtc-pM-Riz" firstAttribute="centerX" secondItem="eFL-7c-PyM" secondAttribute="centerX" id="GCh-Cm-68J"/>
+                            <constraint firstAttribute="bottom" secondItem="3la-yf-Njd" secondAttribute="bottom" id="KiU-fp-hHa"/>
+                            <constraint firstItem="3la-yf-Njd" firstAttribute="top" secondItem="eFL-7c-PyM" secondAttribute="top" id="f7D-69-K03"/>
+                            <constraint firstItem="Qtc-pM-Riz" firstAttribute="centerY" secondItem="eFL-7c-PyM" secondAttribute="centerY" id="h75-7y-kvR"/>
+                            <constraint firstItem="3la-yf-Njd" firstAttribute="trailing" secondItem="57W-Ux-65s" secondAttribute="trailing" id="jn7-On-4K1"/>
+                            <constraint firstItem="3la-yf-Njd" firstAttribute="leading" secondItem="57W-Ux-65s" secondAttribute="leading" id="lSP-7V-v8A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0lU-ne-vI5"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Qxc-71-QkH" id="L2k-TP-Bs0"/>
+                        <outlet property="faultLabel" destination="Qtc-pM-Riz" id="S67-gj-SfV"/>
+                        <outlet property="headlineTableView" destination="3la-yf-Njd" id="gUr-ne-eWI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9n-eZ-21F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-655.07246376811599" y="156.69642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

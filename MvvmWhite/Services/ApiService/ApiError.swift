@@ -12,10 +12,11 @@ public enum ApiError : Error {
     case InvaildHttpResponse
     case InvaildStatusCode(Int)
     case InvaildData(Error)
-    case SerializeError    
+    case SerializeError(Error)
 }
 
 extension ApiError : CustomStringConvertible{
+    
    public var description: String {
         switch self {
         case .InvaildUrl:
@@ -26,8 +27,8 @@ extension ApiError : CustomStringConvertible{
             return "invaild status code \(int)"
         case .InvaildData(let error):
             return "invaild data \(error.localizedDescription)"
-        case .SerializeError:
-            return "error in data serialize"
+        case .SerializeError(let error):
+            return "error in data serialize: \(error)"
         }
     }
     
