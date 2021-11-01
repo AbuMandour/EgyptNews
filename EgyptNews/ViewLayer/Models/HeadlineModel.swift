@@ -12,5 +12,6 @@ struct HeadlineModel : BaseModel {
     var id: String            
     var title: String
     var imageUrl: URL
+    var author: String
     var description: String
 }

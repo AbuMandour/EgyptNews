@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - NewsData
 struct HeadlinesData: Codable {
-    let status: String
+    let status: String?
     let totalResults: Int
     let articles: [Article]
 }
@@ -18,20 +18,17 @@ struct HeadlinesData: Codable {
 struct Article: Codable {
     let source: Source
     let author: String?
-    let title, articleDescription: String
-    let url: String
-    let urlToImage: String
-    let publishedAt: String
+    let title: String?
+    let articleDescription: String?
+    let url: String?
+    let urlToImage: String?
+    let publishedAt: String?
     let content: String?
 
     enum CodingKeys: String, CodingKey {
         case source, author, title
         case articleDescription = "description"
         case url, urlToImage, publishedAt, content
-    }
-    var displayDate: String {
-        //some logic
-        publishedAt.description
     }
 }
 

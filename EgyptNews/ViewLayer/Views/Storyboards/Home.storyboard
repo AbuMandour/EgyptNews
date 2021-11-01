@@ -22,22 +22,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Qxc-71-QkH" userLabel="activityIndicator">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                            </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3la-yf-Njd" userLabel="headlineTableView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Qxc-71-QkH" userLabel="activityIndicator">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <color key="color" systemColor="systemPurpleColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="57W-Ux-65s"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Qtc-pM-Riz" firstAttribute="centerX" secondItem="eFL-7c-PyM" secondAttribute="centerX" id="GCh-Cm-68J"/>
                             <constraint firstAttribute="bottom" secondItem="3la-yf-Njd" secondAttribute="bottom" id="KiU-fp-hHa"/>
-                            <constraint firstItem="3la-yf-Njd" firstAttribute="top" secondItem="eFL-7c-PyM" secondAttribute="top" id="f7D-69-K03"/>
+                            <constraint firstItem="3la-yf-Njd" firstAttribute="top" secondItem="57W-Ux-65s" secondAttribute="top" id="f7D-69-K03"/>
                             <constraint firstItem="Qtc-pM-Riz" firstAttribute="centerY" secondItem="eFL-7c-PyM" secondAttribute="centerY" id="h75-7y-kvR"/>
                             <constraint firstItem="3la-yf-Njd" firstAttribute="trailing" secondItem="57W-Ux-65s" secondAttribute="trailing" id="jn7-On-4K1"/>
                             <constraint firstItem="3la-yf-Njd" firstAttribute="leading" secondItem="57W-Ux-65s" secondAttribute="leading" id="lSP-7V-v8A"/>
@@ -61,6 +63,9 @@
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

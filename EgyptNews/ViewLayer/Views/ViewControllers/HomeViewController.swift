@@ -1,0 +1,66 @@
+//
+//  HomeViewController.swift
+//  EgyptNews
+//
+//  Created by Muhammad Abumandour on 25/10/2021.
+//
+
+import UIKit
+import MvvmWhite
+
+class HomeViewController: UIViewController {
+    
+    @IBOutlet weak var headlineTableView: UITableView!
+    @IBOutlet weak var faultLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    let homeViewModel = HomeViewModel(newsService: NewsService(newsRepo: NewsRepo(apiService: ApiService())))
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        initilaizeTableView()
+        loadData()
+    }
+    
+    private func initilaizeTableView() {
+        headlineTableView.delegate = self
+        headlineTableView.dataSource = self
+        headlineTableView.register(HeadlineTableViewCell.nib, forCellReuseIdentifier: HeadlineTableViewCell.typeName)
+    }
+    
+    private func setupViews() {
+        activityIndicator.stopAnimating()
+        faultLabel.isHidden = !homeViewModel.emptyString.isEmptyOrWhiteSpaces || !homeViewModel.errorString.isEmptyOrWhiteSpaces
+    }
+    
+    private func loadData(){
+        Task.init(priority: .background) {
+            await homeViewModel.getHeadlinesNews()
+            if !homeViewModel.emptyString.isEmptyOrWhiteSpaces{
+                faultLabel.text = homeViewModel.emptyString
+            } else if !homeViewModel.errorString.isEmptyOrWhiteSpaces{
+                faultLabel.text = homeViewModel.errorString
+            } else {
+                DispatchQueue.main.async {
+                    self.headlineTableView.reloadData()
+                    self.setupViews()
+                }
+            }
+        }
+    }
+}
+
+extension HomeViewController : UITableViewDelegate , UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        homeViewModel.headlineNews.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: HeadlineTableViewCell.typeName, for: indexPath) as? HeadlineTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.headlineModel = homeViewModel.headlineNews[indexPath.row]
+        return cell
+    }
+    
+    
+}

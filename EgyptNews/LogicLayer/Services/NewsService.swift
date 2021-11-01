@@ -34,9 +34,10 @@ class NewsService :BaseService, NewsServiceProtocol{
         var models = [HeadlineModel]()
         for article in data.articles {
             let model = HeadlineModel(id: UUID().uuidString,
-                                      title: article.title,
-                                      imageUrl: getImageUrl(from: article.urlToImage),
-                                      description: article.articleDescription)
+                                      title: article.title ?? "no title",
+                                      imageUrl: getImageUrl(from: article.urlToImage ?? ""),
+                                      author: article.author ?? "no author",
+                                      description: article.articleDescription ?? "empty article")
             models.append(model)
         }
         return models

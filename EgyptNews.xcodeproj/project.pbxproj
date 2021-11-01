@@ -21,6 +21,11 @@
 		EA0B2AAB2725AA34003E4420 /* EgyptNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2AAA2725AA34003E4420 /* EgyptNewsUITestsLaunchTests.swift */; };
 		EA0B2AC32725AEAE003E4420 /* libMvvmWhite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0B2ABB2725ADCE003E4420 /* libMvvmWhite.a */; };
 		EA0B2AC8272609C5003E4420 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2AC7272609C5003E4420 /* ApiService.swift */; };
+		EA30365527309B3900DF04F2 /* BaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30365427309B3900DF04F2 /* BaseViewCell.swift */; };
+		EA30365B2730A26700DF04F2 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30365A2730A26700DF04F2 /* FontExtension.swift */; };
+		EA3036662730A2B100DF04F2 /* Graphik-Arabic-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA3036602730A2B100DF04F2 /* Graphik-Arabic-Light.ttf */; };
+		EA3036672730A2B100DF04F2 /* Graphik-Arabic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA3036612730A2B100DF04F2 /* Graphik-Arabic-Bold.ttf */; };
+		EA30366A2730A63100DF04F2 /* Graphik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA3036692730A63100DF04F2 /* Graphik-Regular.ttf */; };
 		EA3DBEEE2729FEC900ACD1FB /* HeadlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3DBEEC2729FEC900ACD1FB /* HeadlineTableViewCell.swift */; };
 		EA3DBEEF2729FEC900ACD1FB /* HeadlineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3DBEED2729FEC900ACD1FB /* HeadlineTableViewCell.xib */; };
 		EA3DBEF1272A064600ACD1FB /* TableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3DBEF0272A064600ACD1FB /* TableViewCellExtension.swift */; };
@@ -105,6 +110,11 @@
 		EA0B2AAA2725AA34003E4420 /* EgyptNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgyptNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EA0B2ABB2725ADCE003E4420 /* libMvvmWhite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMvvmWhite.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0B2AC7272609C5003E4420 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		EA30365427309B3900DF04F2 /* BaseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewCell.swift; sourceTree = "<group>"; };
+		EA30365A2730A26700DF04F2 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		EA3036602730A2B100DF04F2 /* Graphik-Arabic-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Arabic-Light.ttf"; sourceTree = "<group>"; };
+		EA3036612730A2B100DF04F2 /* Graphik-Arabic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Arabic-Bold.ttf"; sourceTree = "<group>"; };
+		EA3036692730A63100DF04F2 /* Graphik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Regular.ttf"; sourceTree = "<group>"; };
 		EA3DBEEC2729FEC900ACD1FB /* HeadlineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineTableViewCell.swift; sourceTree = "<group>"; };
 		EA3DBEED2729FEC900ACD1FB /* HeadlineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadlineTableViewCell.xib; sourceTree = "<group>"; };
 		EA3DBEF0272A064600ACD1FB /* TableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellExtension.swift; sourceTree = "<group>"; };
@@ -179,7 +189,6 @@
 				76EE1B3199FD3B323109C561 /* Pods-MvvmWhite.debug.xcconfig */,
 				A0699BD0B4DD15AFE8801242 /* Pods-MvvmWhite.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,13 +219,9 @@
 		EA0B2A862725AA32003E4420 /* EgyptNews */ = {
 			isa = PBXGroup;
 			children = (
-				EAB6EB6F27271DE1009A1F8F /* Views */,
-				EAB6EB6D27271DC6009A1F8F /* ViewModels */,
-				EAB6EB6827271A14009A1F8F /* Models */,
-				EAB6EB63272716F3009A1F8F /* Services */,
-				EAB6EB5C27270912009A1F8F /* Data */,
-				EAB6EB59272708D4009A1F8F /* Repos */,
-				EAB6EB5627270652009A1F8F /* Constants */,
+				EA3036572730A19200DF04F2 /* ViewLayer */,
+				EA3036582730A1A100DF04F2 /* LogicLayer */,
+				EA3036562730A17B00DF04F2 /* DataAccessLayer */,
 				EA0B2A872725AA32003E4420 /* AppDelegate.swift */,
 				EA0B2A892725AA32003E4420 /* SceneDelegate.swift */,
 				EA0B2A902725AA33003E4420 /* Assets.xcassets */,
@@ -274,6 +279,54 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		EA3036562730A17B00DF04F2 /* DataAccessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6EB5C27270912009A1F8F /* Data */,
+				EAB6EB59272708D4009A1F8F /* Repos */,
+			);
+			path = DataAccessLayer;
+			sourceTree = "<group>";
+		};
+		EA3036572730A19200DF04F2 /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EA3036592730A25400DF04F2 /* SystemDesign */,
+				EAB6EB6F27271DE1009A1F8F /* Views */,
+				EAB6EB6D27271DC6009A1F8F /* ViewModels */,
+				EAB6EB6827271A14009A1F8F /* Models */,
+			);
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		EA3036582730A1A100DF04F2 /* LogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6EB63272716F3009A1F8F /* Services */,
+				EAB6EB5627270652009A1F8F /* Constants */,
+			);
+			path = LogicLayer;
+			sourceTree = "<group>";
+		};
+		EA3036592730A25400DF04F2 /* SystemDesign */ = {
+			isa = PBXGroup;
+			children = (
+				EA30365C2730A27C00DF04F2 /* Fonts */,
+				EA30365A2730A26700DF04F2 /* FontExtension.swift */,
+			);
+			path = SystemDesign;
+			sourceTree = "<group>";
+		};
+		EA30365C2730A27C00DF04F2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EA3036692730A63100DF04F2 /* Graphik-Regular.ttf */,
+				EA3036612730A2B100DF04F2 /* Graphik-Arabic-Bold.ttf */,
+				EA3036602730A2B100DF04F2 /* Graphik-Arabic-Light.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		EA3DBEE72729FD1200ACD1FB /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +365,7 @@
 			children = (
 				EA9FFE64272829AB00FBBB2C /* BaseModel.swift */,
 				EA9FFE682728453F00FBBB2C /* BaseService.swift */,
+				EA30365427309B3900DF04F2 /* BaseViewCell.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -531,8 +585,11 @@
 			files = (
 				EA0B2A942725AA33003E4420 /* LaunchScreen.storyboard in Resources */,
 				EA0B2A912725AA33003E4420 /* Assets.xcassets in Resources */,
+				EA3036672730A2B100DF04F2 /* Graphik-Arabic-Bold.ttf in Resources */,
+				EA30366A2730A63100DF04F2 /* Graphik-Regular.ttf in Resources */,
 				EAB6EB7327271F79009A1F8F /* Home.storyboard in Resources */,
 				EA3DBEEF2729FEC900ACD1FB /* HeadlineTableViewCell.xib in Resources */,
+				EA3036662730A2B100DF04F2 /* Graphik-Arabic-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +739,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA30365B2730A26700DF04F2 /* FontExtension.swift in Sources */,
 				EAB6EB6C27271D83009A1F8F /* NewsServiceProtocol.swift in Sources */,
 				EA0B2A882725AA32003E4420 /* AppDelegate.swift in Sources */,
 				EA3DBEEE2729FEC900ACD1FB /* HeadlineTableViewCell.swift in Sources */,
@@ -723,6 +781,7 @@
 				EAB6EB552726DBD3009A1F8F /* StringExtension.swift in Sources */,
 				EA3DBEF1272A064600ACD1FB /* TableViewCellExtension.swift in Sources */,
 				EA9FFE6C2728477A00FBBB2C /* Settings.swift in Sources */,
+				EA30365527309B3900DF04F2 /* BaseViewCell.swift in Sources */,
 				EA9FFE65272829AB00FBBB2C /* BaseModel.swift in Sources */,
 				EAB6EB6227270CB2009A1F8F /* DataState.swift in Sources */,
 				EA9FFE692728453F00FBBB2C /* BaseService.swift in Sources */,
@@ -1011,7 +1070,7 @@
 		EA0B2AB62725AA34003E4420 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EF7577FB1A50A1FEBBC930F0 /* Pods-EgyptNews-EgyptNewsUITests.release.xcconfig */;
-			buildSettings = {				
+			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
