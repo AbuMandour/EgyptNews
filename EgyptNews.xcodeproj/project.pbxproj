@@ -13,7 +13,6 @@
 		D9813027B1DA98CFDA734D87 /* Pods_EgyptNews_EgyptNewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3558E84C71B12BA5655A10A4 /* Pods_EgyptNews_EgyptNewsUITests.framework */; };
 		EA0144D527260AB90021D6D4 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0144D427260AB90021D6D4 /* ApiError.swift */; };
 		EA0B2A882725AA32003E4420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2A872725AA32003E4420 /* AppDelegate.swift */; };
-		EA0B2A8A2725AA32003E4420 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2A892725AA32003E4420 /* SceneDelegate.swift */; };
 		EA0B2A912725AA33003E4420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0B2A902725AA33003E4420 /* Assets.xcassets */; };
 		EA0B2A942725AA33003E4420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0B2A922725AA33003E4420 /* LaunchScreen.storyboard */; };
 		EA0B2A9F2725AA34003E4420 /* EgyptNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B2A9E2725AA34003E4420 /* EgyptNewsTests.swift */; };
@@ -99,7 +98,6 @@
 		EA0144D427260AB90021D6D4 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		EA0B2A842725AA32003E4420 /* EgyptNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EgyptNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0B2A872725AA32003E4420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA0B2A892725AA32003E4420 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EA0B2A902725AA33003E4420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA0B2A932725AA33003E4420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA0B2A952725AA33003E4420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -223,7 +221,6 @@
 				EA3036582730A1A100DF04F2 /* LogicLayer */,
 				EA3036562730A17B00DF04F2 /* DataAccessLayer */,
 				EA0B2A872725AA32003E4420 /* AppDelegate.swift */,
-				EA0B2A892725AA32003E4420 /* SceneDelegate.swift */,
 				EA0B2A902725AA33003E4420 /* Assets.xcassets */,
 				EA0B2A952725AA33003E4420 /* Info.plist */,
 			);
@@ -744,7 +741,6 @@
 				EA0B2A882725AA32003E4420 /* AppDelegate.swift in Sources */,
 				EA3DBEEE2729FEC900ACD1FB /* HeadlineTableViewCell.swift in Sources */,
 				EAB6EB5E2727091F009A1F8F /* HeadlinesData.swift in Sources */,
-				EA0B2A8A2725AA32003E4420 /* SceneDelegate.swift in Sources */,
 				EAB6EB5827270662009A1F8F /* Urls.swift in Sources */,
 				EAB6EB6527271709009A1F8F /* NewsService.swift in Sources */,
 				EAB6EB7127271F4E009A1F8F /* HomeViewController.swift in Sources */,
@@ -951,7 +947,6 @@
 				INFOPLIST_FILE = EgyptNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -980,7 +975,6 @@
 				INFOPLIST_FILE = EgyptNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
